@@ -7,14 +7,14 @@
     <title>Главная страница лучшего интернет-магазина России</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> </head>
-     <script src="https://kit.fontawesome.com/690b398c9d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/690b398c9d.js" crossorigin="anonymous"></script>
 
 <body>
     <header class="header center">
         <div class="header__left">
             <div class="logo"> <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN <span class="logo__D">D</span> </div>
             <form action="#" class="header__form">
-                <div class="browse">Browse <img src="img/browse.png" alt="Browse"> </div>
+                <div class="browse">Browse <i class="fas fa-caret-down"></i> </div>
                 <input type="text" placeholder="Search for Item..." class="form__input input_cfg">
                 <button class="btn_search"> <img src="img/search.png" alt="btn_search"> </button>
             </form>
@@ -28,8 +28,8 @@
     </header>
     <nav class="nav center">
         <ul class="menu">
-            <li class="menu__item"><a href="#" class="menu__link" alt="Home">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Man">Man</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link menu__link_active" alt="Home">Home</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Man">Man</a></li>
             <li class="menu__item"><a href="#" class="menu__link" alt="Women">Women</a></li>
             <li class="menu__item"><a href="#" class="menu__link" alt="Kids">Kids</a></li>
             <li class="menu__item"><a href="#" class="menu__link" alt="Accoseriese">Accoseriese</a></li>
@@ -257,11 +257,11 @@
     </section>
     
     <section class="offer30 center">
-        <div class="offer30__left">
+        <article class="offer30__left">
             <div class="offer30__left_bg1"></div>
             <div class="offer30__left_bg2"></div>
             <h2 class="offer30__left_h2">30% <span class="offer30__left_offer">OFFER</span> <br><span class="offer30__left_forWomen">FOR WOMEN</span></h2>
-        </div>
+        </article>
         <div class="offer30__right">
            
             <div class="offer30__right_list">
@@ -306,7 +306,7 @@
        <div class="subscribe_bg"></div>
        <div class="subscribe_bg2"></div>
        
-        <div class="subscribe__left">
+        <article class="subscribe__left">
             <div class="subscribe__slider">
                 <div class="s__slider_icon">
                     <img src="img/subscribe/left__icon.png" alt="">
@@ -327,15 +327,17 @@
                      </div>
                 </div>
             </div>
-        </div>
-        <div class="subscribe__right">
+        </article>
+        
+        <section class="subscribe__right">
             <h3 class="subscribe__right_h3">Subscribe <br> <span class="subscribe__right_h3_text">FOR OUR NEWLETTER AND PROMOTION</span></h3>
             
-            <div class="subscribe__form">
-                <input class="subscribe__form_input input_cfg" type="email" placeholder="Enter Your Email" class="subscribe_form_input">
+            <form class="subscribe__form">
+                <input class="subscribe__form_input input_cfg" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Your Email" required>
                 <button class="subscribe_form_btn">Subscribe</button>
-            </div>
-        </div>
+            </form>
+        </section>
+        
     </section>
 
     <footer>
@@ -359,11 +361,11 @@ Distinctively seize superior initiatives for wireless technologies. Dynamically 
                     <h4 class="footer_top__item_h4">COMPANY</h4>
                     
                     <ul class="footer_top__item_ul">
-                        <li><a href="#" class="footer_top__item_link">Home</a></li>
-                        <li><a href="#" class="footer_top__item_link">Shop</a></li>
-                        <li><a href="#" class="footer_top__item_link">About</a></li>
-                        <li><a href="#" class="footer_top__item_link">How It Works</a></li>
-                        <li><a href="#" class="footer_top__item_link">Contact</a></li>
+                        <li><a href="index.html" class="footer_top__item_link">Home</a></li>
+                        <li><a href="shop.html" class="footer_top__item_link">Shop</a></li>
+                        <li><a href="about.html" class="footer_top__item_link">About</a></li>
+                        <li><a href="howitworks.html" class="footer_top__item_link">How It Works</a></li>
+                        <li><a href="contact.html" class="footer_top__item_link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer_top__item">
