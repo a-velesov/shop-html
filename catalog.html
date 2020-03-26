@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница лучшего интернет-магазина России</title>
+    <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> </head>
     <script src="https://kit.fontawesome.com/690b398c9d.js" crossorigin="anonymous"></script>
@@ -12,9 +12,22 @@
 <body>
     <header class="header center">
         <div class="header__left">
-            <div class="logo"> <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN <span class="logo__D">D</span> </div>
+            <div class="logo"> 
+                <a href="index.html" class="logo__link">
+                    <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN 
+                    <span class="logo__D">D</span> 
+                </a>
+            </div>
             <form action="#" class="header__form">
-                <div class="browse">Browse <i class="fas fa-caret-down"></i> </div>
+                <div id="catalog__rectangle_filter_browse" class="browse catalog__rectangle_filter_item">Browse <i class="fas fa-caret-down"></i> 
+                    <div id="catalog__filter_browse" class="catalog__filter_dropdown">
+                        <ul class="catalog__filter_dropdown_ul">
+                            <li class="catalog__filter_dropdown_li">1</li>
+                            <li class="catalog__filter_dropdown_li">2</li>
+                            <li class="catalog__filter_dropdown_li">3</li>
+                        </ul>
+                    </div>
+                </div>
                 <input type="text" placeholder="Search for Item..." class="form__input input_cfg">
                 <button class="btn_search"> <img src="img/search.png" alt="btn_search"> </button>
             </form>
@@ -30,25 +43,25 @@
         <ul class="menu">
             <li class="menu__item"><a href="index.html" class="menu__link" alt="Home">Home</a></li>
             <li class="menu__item"><a href="catalog.html" class="menu__link menu__link_active" alt="Man">Man</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Women">Women</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Kids">Kids</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Accoseriese">Accoseriese</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Featured">Featured</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Hot Deals">Hot Deals</a> </li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Women">Women</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Kids">Kids</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Accoseriese">Accoseriese</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Featured">Featured</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Hot Deals">Hot Deals</a> </li>
         </ul>
     </nav>
     
-    <div class="breadcrumb">
-        
+    <div class="breadcrumb"> 
         <div class="breadcrumb__box center">
             <h1 class="breadcrumb__box_h1">New Arrivals</h1>
-            <nav class="breadcrumb__box_nav">
-                <a href="#" class="breadcrumb__box_nav_item">Home </a>/
-                <a href="#" class="breadcrumb__box_nav_item">Men </a>/
-                <a href="#" class="breadcrumb__box_nav_item breadcrumb__box_nav_item_active">New Arrivals</a>
+            <nav>
+                <ul class="breadcrumb__box_nav"> 
+                    <li class="breadcrumb__list"><a href="index.html" class="breadcrumb__box_nav_item">Home </a></li>
+                    <li class="breadcrumb__list"><a href="catalog.html" class="breadcrumb__box_nav_item">Men </a></li>
+                    <li class="breadcrumb__list"><a href="#" class="breadcrumb__box_nav_item breadcrumb__box_nav_item_active">New Arrivals</a></li>
+                </ul>
             </nav>
         </div>
-        
     </div>
     
     <section class="catalog center">
@@ -188,12 +201,35 @@
                
                 <div class="catalog__rectangle_filter">
                     <div class="catalog__rectangle_filter_item">Sort By</div>
-                    <div id="catalog__rectangle_filter_sortBy" class="catalog__rectangle_filter_item">Name <i class="fas fa-caret-down"></i> </div>
+                    <div id="catalog__rectangle_filter_sortBy" class="catalog__rectangle_filter_item">
+                        Name <i class="fas fa-caret-down"></i> 
+
+                        <div id="catalog__filter_sort" class="catalog__filter_dropdown">
+                            <ul class="catalog__filter_dropdown_ul">
+                                <li class="catalog__filter_dropdown_li">Name</li>
+                                <li class="catalog__filter_dropdown_li">Size</li>
+                                <li class="catalog__filter_dropdown_li">Color</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="catalog__rectangle_filter">
                     <div class="catalog__rectangle_filter_item">Show</div>
-                    <div id="catalog__rectangle_filter_show" class="catalog__rectangle_filter_item">09 <i class="fas fa-caret-down"></i> </div>
+                    <div id="catalog__rectangle_filter_show" class="catalog__rectangle_filter_item">
+                        09 <i class="fas fa-caret-down"></i> 
+
+                        <div id="catalog__filter_show" class="catalog__filter_dropdown">
+                            <ul class="catalog__filter_dropdown_ul">
+                                <li class="catalog__filter_dropdown_li">20</li>
+                                <li class="catalog__filter_dropdown_li">30</li>
+                                <li class="catalog__filter_dropdown_li">50</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                    
                 </div>
                 
             </nav>
@@ -204,7 +240,7 @@
                     <div class="featuredItems__item">
 
                         <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/1.png" alt="" class="featuredItems__img">
                               </div>
@@ -217,14 +253,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                        <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/2.png" alt="" class="featuredItems__img">
                               </div>
@@ -232,19 +268,19 @@
 
                             <div class="featuredItems__hover">
                                 <a href="#" class="featuredItems__link">
-                                    <img class="basket_featuredItems" src="img/fcatalot__product/basket.png" alt="Корзина">Add to Cart 
+                                    <img class="basket_featuredItems" src="img/catalot__product/basket.png" alt="Корзина">Add to Cart 
                                 </a>
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                         <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/3.png" alt="" class="featuredItems__img">
                               </div>
@@ -257,14 +293,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                        <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/4.png" alt="" class="featuredItems__img">
                               </div>
@@ -277,14 +313,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                         <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/5.png" alt="" class="featuredItems__img">
                               </div>
@@ -297,14 +333,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                         <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/6.png" alt="" class="featuredItems__img">
                               </div>
@@ -317,14 +353,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                        <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/7.png" alt="" class="featuredItems__img">
                               </div>
@@ -337,14 +373,14 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
                     <div class="featuredItems__item">
 
                        <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/8.png" alt="" class="featuredItems__img">
                               </div>
@@ -357,7 +393,7 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
@@ -365,7 +401,7 @@
                     <div class="featuredItems__item">
 
                        <div class="featuredItems__item_box">
-                           <a href="#" class="featuredItems__img_link">
+                           <a href="single_page.html" class="featuredItems__img_link">
                               <div class="featuredItems__item_img">
                                <img src="img/catalot__product/9.png" alt="" class="featuredItems__img">
                               </div>
@@ -378,7 +414,7 @@
                             </div>
                         </div>
 
-                        <div class="featuredItems_label">Mango People T-shirt</div>
+                        <div class="featuredItems_label"><a class="shoppingCart__productDetails_item_link" href="single_page.html">Mango  People  T-shirt</a></div>
                         <div class="featuredItems_price">$52.00</div>
 
                     </div>
@@ -393,22 +429,22 @@
                     <div class="catalog__pagination_list">
                         <ul class="catalog__pagination_list_ul">
                              <li class="catalog__pagination_list_li">
-                               <a href="#" class="catalog__pagination_list_link">
+                               <a href="catalog.html" class="catalog__pagination_list_link">
                                     <i class="fas fa-angle-left"></i>
                                 </a>
                             </li>
                             
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">1</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">2</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">3</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">4</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">5</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">6</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">...</a></li>
-                            <li class="catalog__pagination_list_li"><a href="#" class="catalog__pagination_list_link">20</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">1</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">2</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">3</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">4</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">5</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">6</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">...</a></li>
+                            <li class="catalog__pagination_list_li"><a href="catalog.html" class="catalog__pagination_list_link">20</a></li>
                             
                             <li class="catalog__pagination_list_li">
-                               <a href="#" class="catalog__pagination_list_link">
+                               <a href="catalog.html" class="catalog__pagination_list_link">
                                     <i class="fas fa-angle-right"></i>
                                 </a>
                             </li>
@@ -420,7 +456,7 @@
                 </div>
                 
                 <div class="catalog__pagination_item">
-                    <a href="" class="catalog__viewAll">View All</a>
+                    <a href="catalog.html" class="catalog__viewAll">View All</a>
                 </div>
             </div>
         </div>
@@ -500,7 +536,11 @@
         <div class="footer_top center">
             <nav class="footer_top__list">      
                 <div class="footer_top__item">
-                    <div class="logo"> <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN <span class="logo__D">D</span> 
+                    <div class="logo"> 
+                        <a href="index.html" class="logo__link">
+                            <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN 
+                            <span class="logo__D">D</span> 
+                        </a>
                     </div>
                     
                     <div class="footer_top_text">

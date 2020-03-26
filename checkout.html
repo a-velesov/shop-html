@@ -14,9 +14,22 @@
 <body>
     <header class="header center">
         <div class="header__left">
-            <div class="logo"> <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN <span class="logo__D">D</span> </div>
+            <div class="logo"> 
+                <a href="index.html" class="logo__link">
+                    <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN 
+                    <span class="logo__D">D</span> 
+                </a>
+            </div>
             <form action="#" class="header__form">
-                <div class="browse">Browse <i class="fas fa-caret-down"></i> </div>
+                <div id="catalog__rectangle_filter_browse" class="browse catalog__rectangle_filter_item">Browse <i class="fas fa-caret-down"></i> 
+                    <div id="catalog__filter_browse" class="catalog__filter_dropdown">
+                        <ul class="catalog__filter_dropdown_ul">
+                            <li class="catalog__filter_dropdown_li">1</li>
+                            <li class="catalog__filter_dropdown_li">2</li>
+                            <li class="catalog__filter_dropdown_li">3</li>
+                        </ul>
+                    </div>
+                </div>
                 <input type="text" placeholder="Search for Item..." class="form__input input_cfg">
                 <button class="btn_search"> <img src="img/search.png" alt="btn_search"> </button>
             </form>
@@ -32,25 +45,25 @@
         <ul class="menu">
             <li class="menu__item"><a href="index.html" class="menu__link" alt="Home">Home</a></li>
             <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Man">Man</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Women">Women</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Kids">Kids</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Accoseriese">Accoseriese</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Featured">Featured</a></li>
-            <li class="menu__item"><a href="#" class="menu__link" alt="Hot Deals">Hot Deals</a> </li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Women">Women</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Kids">Kids</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Accoseriese">Accoseriese</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Featured">Featured</a></li>
+            <li class="menu__item"><a href="catalog.html" class="menu__link" alt="Hot Deals">Hot Deals</a> </li>
         </ul>
     </nav>
     
-    <div class="breadcrumb">
-        
+    <div class="breadcrumb"> 
         <div class="breadcrumb__box center">
             <h1 class="breadcrumb__box_h1">New Arrivals</h1>
-            <nav class="breadcrumb__box_nav">
-                <a href="#" class="breadcrumb__box_nav_item">Home </a>/
-                <a href="#" class="breadcrumb__box_nav_item">Men </a>/
-                <a href="#" class="breadcrumb__box_nav_item breadcrumb__box_nav_item_active">New Arrivals</a>
+            <nav>
+                <ul class="breadcrumb__box_nav"> 
+                    <li class="breadcrumb__list"><a href="index.html" class="breadcrumb__box_nav_item">Home </a></li>
+                    <li class="breadcrumb__list"><a href="catalog.html" class="breadcrumb__box_nav_item">Men </a></li>
+                    <li class="breadcrumb__list"><a href="#" class="breadcrumb__box_nav_item breadcrumb__box_nav_item_active">New Arrivals</a></li>
+                </ul>
             </nav>
         </div>
-        
     </div>
     
     <section class="chechout center">
@@ -68,13 +81,13 @@
                                 <div class="chechout__ul_box_form_text">Register with us for future convenience</div>
                                 
                                 <div class="chechout__ul_block_radioBtns">
-                                   <label for="chechout__ul_block_radioBtn">
-                                        <input type="radio" class="chechout__ul_block_radioBtn" name="chechout__ul_block_radioBtn"> checkout as guest
+                                   <label for="chechout__ul_block_radioBtn1">
+                                        <input type="radio" class="chechout__ul_block_radioBtn" id="chechout__ul_block_radioBtn1" name="chechout__ul_block_radioBtn"> checkout as guest
                                    </label>
                                    
                                     <br>
-                                    <label for="chechout__ul_block_radioBtn" class="">
-                                        <input type="radio" class="chechout__ul_block_radioBtn" name="chechout__ul_block_radioBtn"> register
+                                    <label for="chechout__ul_block_radioBtn2" class="">
+                                        <input type="radio" class="chechout__ul_block_radioBtn" id="chechout__ul_block_radioBtn2" name="chechout__ul_block_radioBtn"> register
                                     </label>
 
                                 </div>
@@ -218,7 +231,11 @@
         <div class="footer_top center">
             <nav class="footer_top__list">      
                 <div class="footer_top__item">
-                    <div class="logo"> <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN <span class="logo__D">D</span> 
+                    <div class="logo"> 
+                        <a href="index.html" class="logo__link">
+                            <img src="img/logo.png" alt="BRAND" class="logo__img">BRAN 
+                            <span class="logo__D">D</span> 
+                        </a>
                     </div>
                     
                     <div class="footer_top_text">
