@@ -103,7 +103,6 @@ input[type="text"]:-ms-input-placeholder { padding-left: 16px;}
     }
 }
 
-
 .fa-search {
     color: rgba(164, 164, 164, 1);
 }
@@ -135,10 +134,8 @@ input[type="text"]:-ms-input-placeholder { padding-left: 16px;}
 .drop {
     position: absolute;
     top: 48px;
-    // left: 0;
     background-color: #fff;
     padding: 12px 20px;
-    // border: 1px solid;
     display: flex;
     z-index: 6;
     border-radius: 5px;
@@ -937,16 +934,19 @@ input[type="email"] {
 #catalog__rectangle_filter_browse,
 #catalog__rectangle_filter_shippingAddress {
     cursor: pointer;
-    // border-left: none;
     position: relative;
 }
 
 #catalog__filter_browse {
-    width: 262px;
+    // width: 100%;
 }
 
 .catalog__rectangle_filter {
     position: relative;
+}
+
+.open_dropDown:hover .catalog__filter_dropdown {
+    display: block;
 }
 
 .catalog__filter_dropdown {
@@ -955,11 +955,14 @@ input[type="email"] {
     margin-top: 36px;
     z-index: 4;
     display: none;
-    
+    width: 100%;
     left: 0;
     background-color: #fff;
     z-index: 5;
     padding: 0 13px;
+    &_menuTop {
+        width: 246px;
+    }
 
     &__sortUp {
         position: absolute;
@@ -1022,10 +1025,10 @@ input[type="email"] {
 }
 
 #catalog__rectangle_filter_browse:hover #catalog__filter_browse {
-    display: block;;
+    display: block;
 }
 #catalog__rectangle_filter_shippingAddress:hover #catalog__filter_browse {
-    display: block;;
+    display: block;
 }
 
 /*details*/
@@ -1085,15 +1088,11 @@ input[type="email"] {
     }
 }
 
-
-
 details.sidebar__item_details[open] > .sidebar__item_summary::after {
   content: '\25B2';
   color: $mainColor;
 }
 /*details*/
-
-
 
 .topFilter {
     display: flex;
@@ -1314,8 +1313,8 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
 }
 
 .userInfo {
-    @include flex(space-between, flex-start)
-    margin-top: 63px;
+    @include flex(space-between, flex-start);
+        margin-top: 63px;
     flex-wrap: wrap;
 
     &__h4 {
@@ -1324,13 +1323,13 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
         color: rgba(34, 34, 34, 1);
         text-transform: uppercase;
     }
-    
+
     &__form {
         display: flex;
         flex-direction: column;
         margin-top: 22px;
     }
-    
+
     &__form_item[placeholder] {
         font-size: 13px;
         font-weight: 300;
@@ -1345,7 +1344,7 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
         width: 355px;
         color: #000;
     }
-    
+
     &__form_item_btn {
         width: 100px;
         height: 35px;
@@ -1363,32 +1362,32 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
         background-color: $mainColor;
         color: white;
     }
-    
+
     &__p {
         font-size: 14px;
         font-weight: 300;
         color: rgba(0, 0, 0, 1);
         margin-top: 28px;
     }
-    
+
     &__grandTotal {
         padding: 40px 41px 42px 44px;
         background: #f5f3f3;
     }
-    
+
     &__grandTotal_box {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
     }
-    
+
     &__grandTotal_box_item1 {
         font-size: 11px;
         color: rgba(74, 74, 74, 1);
         text-transform: uppercase;
     }
-    
+
     &__grandTotal_box_item2 {
         font-size: 16px;
         font-weight: bold;
@@ -1396,16 +1395,16 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
         text-transform: uppercase;
         margin-top: 14px;
     }
-    
+
     &__grandTotal_box_item2_price {
         color: $mainColor;
     }
-    
+
     &__grandTotal_box2 {
         border-top: 1px solid rgba(226, 226, 226, 1);
         margin-top: 22px;
     }
-    
+
     &__grandTotal_btn {
         background: $mainColor;
         padding: 19px 42px;
@@ -1561,6 +1560,8 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
         font-size: 12px;
         padding: 11px 14px;
         color: rgba(188, 188, 188, 1);
+        position: relative;
+        cursor: pointer;
     }
 
 }
@@ -1602,13 +1603,6 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
 .chechout__ul {
     list-style-type: none;
 }
-
-/*
-.chechout__ul_summary {
-    padding-top: 34px;
-    padding-bottom: 34px;
-}
-*/
 
 /*details .chechout__box_details */
 
@@ -1695,8 +1689,6 @@ details.chechout__box_details[open] > .chechout__ul_summary::before {
 }
 
 .chechout__ul_box_form_submit_btn {
-/*    width: 100px;*/
-/*    height: 35px;*/
     cursor: pointer;
     background: white;
     border: 1px solid rgba(234, 234, 234, 1);
@@ -1715,7 +1707,6 @@ details.chechout__box_details[open] > .chechout__ul_summary::before {
 
 .btn__forgotPassword {
     border: none;
-/*    margin-left: 32px;*/
 }
 
 .chechout__ul_block_inputText {
@@ -1739,11 +1730,8 @@ details.chechout__box_details[open] > .chechout__ul_summary::before {
 .chechout__ul_box_form_requerdFields {
     color: red;
     font-size: 13px;
-/*    margin-top: 22px;*/
 }
 
 .redColor {
     color: red;
 }
-
-

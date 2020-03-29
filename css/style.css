@@ -1162,12 +1162,12 @@ input[type="email"] {
   position: relative;
 }
 
-#catalog__filter_browse {
-  width: 262px;
-}
-
 .catalog__rectangle_filter {
   position: relative;
+}
+
+.open_dropDown:hover .catalog__filter_dropdown {
+  display: block;
 }
 
 .catalog__filter_dropdown {
@@ -1176,10 +1176,15 @@ input[type="email"] {
   margin-top: 36px;
   z-index: 4;
   display: none;
+  width: 100%;
   left: 0;
   background-color: #fff;
   z-index: 5;
   padding: 0 13px;
+}
+
+.catalog__filter_dropdown_menuTop {
+  width: 246px;
 }
 
 .catalog__filter_dropdown__sortUp {
@@ -1225,7 +1230,6 @@ input[type="email"] {
 .catalog__filter_dropdown_li {
   margin-bottom: 10px;
   width: 100%;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: start;
@@ -1917,6 +1921,8 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
   font-size: 12px;
   padding: 11px 14px;
   color: #bcbcbc;
+  position: relative;
+  cursor: pointer;
 }
 
 #productDescription__form {
@@ -1964,12 +1970,6 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
   list-style-type: none;
 }
 
-/*
-.chechout__ul_summary {
-    padding-top: 34px;
-    padding-bottom: 34px;
-}
-*/
 /*details .chechout__box_details */
 .chechout__ul_summary {
   display: block;
@@ -2057,8 +2057,6 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
 }
 
 .chechout__ul_box_form_submit_btn {
-  /*    width: 100px;*/
-  /*    height: 35px;*/
   cursor: pointer;
   background: white;
   border: 1px solid #eaeaea;
@@ -2077,7 +2075,6 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
 
 .btn__forgotPassword {
   border: none;
-  /*    margin-left: 32px;*/
 }
 
 .chechout__ul_block_inputText {
@@ -2106,7 +2103,6 @@ details.sidebar__item_details[open] > .sidebar__item_summary::after {
 .chechout__ul_box_form_requerdFields {
   color: red;
   font-size: 13px;
-  /*    margin-top: 22px;*/
 }
 
 .redColor {

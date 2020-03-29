@@ -22,7 +22,7 @@
             </div>
             <form action="#" class="header__form">
                 <div id="catalog__rectangle_filter_browse" class="browse catalog__rectangle_filter_item">Browse <i class="fas fa-caret-down"></i> 
-                    <div id="catalog__filter_browse" class="catalog__filter_dropdown">
+                    <div id="catalog__filter_browse" class="catalog__filter_dropdown catalog__filter_dropdown_menuTop">
                         <i class="fas fa-sort-up catalog__filter_dropdown__sortUp"></i>
                         <div class="catalog__filter_dropdown_header">Women</div>
                         <ul class="catalog__filter_dropdown_ul">
@@ -54,7 +54,9 @@
                     </div>
                 </div>
                 <input type="text" placeholder="Search for Item..." class="form__input input_cfg">
-                <button class="btn_search"> <img src="img/search.png" alt="btn_search"> </button>
+                <button class="btn_search">
+                    <i class="fas fa-search"></i>
+                </button>
             </form>
         </div>
         <div class="header__right">
@@ -511,15 +513,64 @@
                     <div class="productDescription__form_box">
                         <div class="productDescription__form_box_item">
                             <div class="productDescription__form_box_label">CHOOSE COLOR</div>
-                            <div class="productDescription__form_box_browse">Red <i class="fas fa-caret-down" aria-hidden="true"></i> </div>
+                            <div class="productDescription__form_box_browse open_dropDown">
+                                Red <i class="fas fa-caret-down" aria-hidden="true"></i> 
+
+                                <div class="catalog__filter_dropdown">
+                                    <i class="fas fa-sort-up catalog__filter_dropdown__sortUp" aria-hidden="true"></i>
+                                    <ul class="catalog__filter_dropdown_ul">
+                                        <li class="catalog__filter_dropdown_li">RED</li>
+                                        <li class="catalog__filter_dropdown_li">GREEN</li>
+                                        <li class="catalog__filter_dropdown_li">BLACK</li>
+                                        <li class="catalog__filter_dropdown_li">WHITE</li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="productDescription__form_box_item">
                             <div class="productDescription__form_box_label">CHOOSE SIZE</div>
-                            <div class="productDescription__form_box_browse">XXL <i class="fas fa-caret-down" aria-hidden="true"></i> </div>
+                            <div class="productDescription__form_box_browse open_dropDown">
+                                XXL <i class="fas fa-caret-down" aria-hidden="true"></i> 
+
+                                <div class="catalog__filter_dropdown">
+                                    <i class="fas fa-sort-up catalog__filter_dropdown__sortUp" aria-hidden="true"></i>
+                                    <ul class="catalog__filter_dropdown_ul">
+                                        <li class="catalog__filter_dropdown_li">s</li>
+                                        <li class="catalog__filter_dropdown_li">xs</li>
+                                        <li class="catalog__filter_dropdown_li">l</li>
+                                        <li class="catalog__filter_dropdown_li">xl</li>
+                                        <li class="catalog__filter_dropdown_li">m</li>
+                                        <li class="catalog__filter_dropdown_li">xm</li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="productDescription__form_box_item">
                             <div class="productDescription__form_box_label">QUANTITY</div>
-                            <input type="number" class="productDescription__form_box_browse" value="2">
+                            <input type="number" class="productDescription__form_box_browse" value="2" min="1">
+                        </div>
+
+                        <div class="productDescription__form_box_item">
+                            <div class="productDescription__form_box_label">ваввыааы</div>
+
+                            <div class="productDescription__form_box_browse open_dropDown btn__gray">
+                                XXL <i class="fas fa-caret-down" aria-hidden="true"></i> 
+
+                                <div class="catalog__filter_dropdown">
+                                    <i class="fas fa-sort-up catalog__filter_dropdown__sortUp" aria-hidden="true"></i>
+                                    <ul class="catalog__filter_dropdown_ul">
+                                        <li class="catalog__filter_dropdown_li">s</li>
+                                        <li class="catalog__filter_dropdown_li">xs</li>
+                                        <li class="catalog__filter_dropdown_li">l</li>
+                                        <li class="catalog__filter_dropdown_li">xl</li>
+                                        <li class="catalog__filter_dropdown_li">m</li>
+                                        <li class="catalog__filter_dropdown_li">xm</li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
